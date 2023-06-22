@@ -9,7 +9,7 @@ console.log('Animals are: ', animalArray);
 
 // 1.a. TODO: Make an array with some favorite foods
 
-let favoriteFoods = ['tacos', 'ramen', 'pizza', 'steak', 'tikka masala']
+let favoriteFoods = ['tacos', 'ramen', 'pizza', 'steak', 'tikka masala'];
 
 // 1.b. TODO: Log your array of foods to the console with a message, similar 
 //      to the example above
@@ -98,14 +98,32 @@ console.log(favoriteFoods);
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
 
-
+favoriteFoods.sort().reverse();
+console.log(favoriteFoods);
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+
+let listedFoods = favoriteFoods[0] + " and " + favoriteFoods[1] + " and " + favoriteFoods[2] + " and " + favoriteFoods[3];
+console.log(listedFoods);
+
+let loopedFoods = "";
+
+//Forrest: trying out a loop for this one also.. while not shorter in this case, it could be a good method for longer arrays?
+
+for (let i = 0; i < (favoriteFoods.length - 1); i++) {
+    loopedFoods += favoriteFoods[i] + " and ";
+}
+loopedFoods += favoriteFoods[favoriteFoods.length - 1];
+console.log(loopedFoods);
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+
+let newArray = favoriteFoods.concat(animalArray);
+
+console.log(newArray);
