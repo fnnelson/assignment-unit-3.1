@@ -108,9 +108,9 @@ console.log(favoriteFoods);
 let listedFoods = favoriteFoods[0] + " and " + favoriteFoods[1] + " and " + favoriteFoods[2] + " and " + favoriteFoods[3];
 console.log(listedFoods);
 
-let loopedFoods = "";
-
 //Forrest: trying out a loop for this one also.. while not shorter in this case, it could be a good method for longer arrays?
+
+let loopedFoods = "";
 
 for (let i = 0; i < (favoriteFoods.length - 1); i++) {
     loopedFoods += favoriteFoods[i] + " and ";
