@@ -74,7 +74,8 @@ animalArray.unshift('walrus');
 console.log(`Added an animal to beginning: ${animalArray}`);
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
-
+favoriteFoods.unshift('popcorn');
+console.log(`Added a food item to beginning: ${favoriteFoods}`);
 
 // Example: Remove the first animal using Array.shift
 removedAnimal = animalArray.shift();
@@ -105,11 +106,13 @@ console.log(favoriteFoods);
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
 
-let listedFoods = favoriteFoods[0] + " and " + favoriteFoods[1] + " and " + favoriteFoods[2] + " and " + favoriteFoods[3];
+console.log("convert to string using every index:")
+let listedFoods = favoriteFoods[0] + " and " + favoriteFoods[1] + " and " + favoriteFoods[2] + " and " + favoriteFoods[3] + " and " + favoriteFoods[4];
 console.log(listedFoods);
 
 //Forrest: trying out a loop for this one also.. while not shorter in this case, it could be a good method for longer arrays?
 
+console.log("convert to string using loop:")
 let loopedFoods = "";
 
 for (let i = 0; i < (favoriteFoods.length - 1); i++) {
@@ -117,6 +120,9 @@ for (let i = 0; i < (favoriteFoods.length - 1); i++) {
 }
 loopedFoods += favoriteFoods[favoriteFoods.length - 1];
 console.log(loopedFoods);
+
+console.log("convert to string using join: (so much easier!)")
+console.log(favoriteFoods.join(" and "));
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
